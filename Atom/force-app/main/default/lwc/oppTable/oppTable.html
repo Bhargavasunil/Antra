@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Opportunities">
+        <lightning-datatable
+        key-field="id"
+        data={_oppList}
+        columns={columns}
+        hide-checkbox-column="true"
+        onrowaction={handleRowAction}>
+        </lightning-datatable>
+    </lightning-card> 
+</template>

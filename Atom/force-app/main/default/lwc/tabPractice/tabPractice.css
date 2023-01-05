@@ -1,0 +1,12 @@
+.tabset{
+    background-color: white;
+    margin:auto 1px;
+}
+.one{
+    width:250px;
+}
+.sbox{
+    background-color: rgb(242, 242, 242);
+    border-radius:12px;
+
+}
