@@ -1,0 +1,12 @@
+.alert{
+    padding:20px;
+    background-color: red;
+    color:white;
+    opacity: 1;
+    transition: opacity 0.6s;
+    margin-bottom:15px;
+    margin-left:5px;
+}
+.alert.Success {background-color: green;transition:opacity 0.2s}
+.alert.Info{background-color:yellow;color:black}
+.alert.Warning{background-color: orange;}

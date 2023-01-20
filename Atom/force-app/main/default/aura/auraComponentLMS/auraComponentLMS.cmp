@@ -1,0 +1,15 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global">
+    <!--by using flexipage:availableForAllPageTypes interface, component will available for recordpages and other types of pages-->
+    <!--aura:id is useful to retrieve component by it's Id in Javascript code-->
+    <!--onMessage in the messageChannel acts as a listener to the message-->
+    <!--Scope =APPLICATION is used to "Receive the message from anywhere in the application"-->
+    <!--Creating an attribute to store the value of message-->
+<aura:attribute type="String" name="message"/>
+<lightning:messageChannel type="SamplemessageChannel__c"
+                       aura:id="SamplemessageChannel"  
+                       onMessage="{!c.handleMessage}"
+                       scope="APPLICATION"></lightning:messageChannel>
+<lightning:card>
+      <lightning:formattedText value="{v.message}"></lightning:formattedText>
+</lightning:card>
+</aura:component>	

@@ -1,0 +1,20 @@
+<template>
+    <div class="card">
+     <div class="slds-box slds-grid">
+        <div class="slds-col slds-size_1-of-4"></div>
+        <div class="slds-col slds-size_2-of-4">
+            <lightning-input label="Please type your message to publish" onkeyup={inputHandler}></lightning-input>
+        </div>
+        <div class="slds-col slds-size_1-of-3"></div>
+     </div>
+     <div class="slds-grid">
+        <div class="slds-col slds-size_1-of-3"></div>
+         <div class="slds-col slds-size_1-of-3">
+            <lightning-button  label="Publish"      
+                               variant="brand"
+                               onclick={publishHandler} ></lightning-button>
+                            </div>
+     </div>
+     <div class="slds-col slds-size_1-of-3"></div>
+    </div>
+</template>

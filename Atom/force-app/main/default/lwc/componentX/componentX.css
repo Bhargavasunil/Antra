@@ -1,0 +1,6 @@
+.card{
+    background-color: white;
+}
+:host{
+    --sds-c-button-brand-color-background: orange;
+}

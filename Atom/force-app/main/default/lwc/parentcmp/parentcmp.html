@@ -1,0 +1,13 @@
+<template>
+   <lightning-card title="Passing data down to the component hierarchy">
+     <div>
+        <c-childcmp message="Indicates a dangerous or potentially negative action"></c-childcmp>
+        <c-childcmp message="Success!Indicates a successful or positive action"
+                    class-name="Success"></c-childcmp>
+        <c-childcmp message="Info! Indicates a neutral informative change or action"
+                    class-name="Info"></c-childcmp>
+        <c-childcmp message="Warning!Indicates a warning that might need attention"
+                    class-name="Warning"></c-childcmp>
+     </div>
+   </lightning-card>
+</template>
