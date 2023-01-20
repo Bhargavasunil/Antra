@@ -14,6 +14,7 @@ export default class ComponentX extends LightningElement {
           const message={
               lmsData:{value:this._inputValue}
            }
+           //publish(messageContext,messageChannel,message)
         publish(this.textContext,SAMPLE_MSG,message)
     }
 }

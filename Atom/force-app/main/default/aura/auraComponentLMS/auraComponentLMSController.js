@@ -1,9 +1,7 @@
 ({
-    handleMessage:function(cmp,event,helper){
+    handleMessage:function(cmp,event){
            if(event != null){
-               const messageBody = event.getParam('messageBody');
-               const source = event.getParam('source');
-               cmp.set("v.message",'Message: ' + message + '.\n\n Sent From: ' + source);
+             cmp.set('v.message',JSON.stringify(event._params.lmsData.value))
            }
     }
 })

@@ -9,7 +9,9 @@
                        aura:id="SamplemessageChannel"  
                        onMessage="{!c.handleMessage}"
                        scope="APPLICATION"></lightning:messageChannel>
-<lightning:card>
-      <lightning:formattedText value="{v.message}"></lightning:formattedText>
+<lightning:card title="Subscriber built by using Aura component">
+    <div class="slds-m-around_small">
+      <lightning:formattedText value="{!v.message}"></lightning:formattedText>
+      </div>
 </lightning:card>
 </aura:component>	
